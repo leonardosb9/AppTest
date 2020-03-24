@@ -5,8 +5,8 @@
       <ThinkProfile Value="0.2" Pattern="NormalDistribution" />
       <LoadProfile Pattern="Constant" InitialUsers="50" />
       <TestMix>
-        <TestProfile Name="..\..\apptest.webtest\webtest1.webtest" Path="..\..\apptest.webtest\webtest1.webtest" Id="29c3113b-46cf-41aa-89e5-cc2aa8f60a0a" Percentage="50" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-        <TestProfile Name="..\..\apptest.webtest\webtest2.webtest" Path="..\..\apptest.webtest\webtest2.webtest" Id="4c591ce8-ce31-4a2b-95b6-4a3c3f07cbb0" Percentage="50" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestProfile Name="WebTest1" Path="..\..\apptest.webtest\webtest1.webtest" Id="29c3113b-46cf-41aa-89e5-cc2aa8f60a0a" Percentage="50" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestProfile Name="WebTest2" Path="..\..\apptest.webtest\webtest2.webtest" Id="4c591ce8-ce31-4a2b-95b6-4a3c3f07cbb0" Percentage="50" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
       <BrowserMix>
         <BrowserProfile Percentage="100">

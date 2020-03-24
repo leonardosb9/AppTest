@@ -29,27 +29,28 @@
       <Headers>
         <Header Name="Referer" Value="http://localhost:50823/Account/Login" />
       </Headers>
+      <ValidationRules>
+        <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleFindText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Localizar texto" Description="Verifica a existência do texto especificado na resposta." Level="High" ExectuionOrder="BeforeDependents">
+          <RuleParameters>
+            <RuleParameter Name="FindText" Value="Tentativa de login" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="PassIfTextFound" Value="True" />
+          </RuleParameters>
+        </ValidationRule>
+      </ValidationRules>
       <FormPostHttpBody>
         <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="HPj5gXgPy8vvCM6XjKqwKMZ_2y_iozmDD7WI6wMUT8ijYyp-84HBKYRaZpsZhn18SdibxuadxyOsPGnTslH56nX52dS392rUh55pAHHJkek1" CorrelationBinding="" UrlEncode="True" />
         <FormPostParameter Name="Email" Value="leonardosb9@gmail.com" RecordedValue="leonardosb9@gmail.com" CorrelationBinding="{{FormPostParam4.Email}}" UrlEncode="True" />
-        <FormPostParameter Name="Password" Value="123456" RecordedValue="Kjuu$#ery001" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Password" Value="123" RecordedValue="Kjuu$#ery001" CorrelationBinding="" UrlEncode="True" />
         <FormPostParameter Name="RememberMe" Value="{{$HIDDEN1.RememberMe}}" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
       </FormPostHttpBody>
     </Request>
   </Items>
   <ValidationRules>
-    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="URL de resposta" Description="Valida que a URL de resposta após redirecionamentos é a mesma que a URL de resposta após os parâmetros QueryString serem ignorados." Level="Low" ExectuionOrder="BeforeDependents" />
     <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Meta de tempo de resposta" Description="Valida que o tempo de resposta para a solicitação é menor que ou igual ao tempo de resposta especificado na solicitação. Metas de tempo de resposta nulas serão ignoradas." Level="Low" ExectuionOrder="AfterDependents">
       <RuleParameters>
         <RuleParameter Name="Tolerance" Value="0" />
-      </RuleParameters>
-    </ValidationRule>
-    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleFindText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Localizar texto" Description="Verifica a existência do texto especificado na resposta." Level="High" ExectuionOrder="BeforeDependents">
-      <RuleParameters>
-        <RuleParameter Name="FindText" Value="Tentativa de login inválida." />
-        <RuleParameter Name="IgnoreCase" Value="False" />
-        <RuleParameter Name="UseRegularExpression" Value="False" />
-        <RuleParameter Name="PassIfTextFound" Value="False" />
       </RuleParameters>
     </ValidationRule>
   </ValidationRules>
